@@ -474,7 +474,7 @@
                         Be among the first to experience quantum-powered AI compliance.<br/>
                         Early access launching Q1 2026.
                     </p>
-                    
+              <!--
                     <form id="waitlistForm" class="max-w-2xl mx-auto space-y-4">
                         <div class="grid md:grid-cols-2 gap-4">
                             <input type="text" id="name" placeholder="Your Name" required 
@@ -501,6 +501,45 @@
                             Secure My Spot →
                         </button>
                     </form>
+                 -->   
+                    <form id="waitlistForm" action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto space-y-4">
+                    <!-- 👇 STEP 1: Put your Web3Forms access key here -->
+                    <input type="hidden" name="access_key" value="3bc063fc-7ac6-46f6-885d-eda0fa0cc7ca">
+    
+                    <!-- 👇 STEP 2: Put your email here (where submissions will be sent) -->
+                    <input type="hidden" name="from_name" value="QuantumAI Shield Waitlist">
+                    <input type="hidden" name="subject" value="🚀 New Waitlist Signup - QuantumAI Shield">
+    
+                    <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required 
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl focus:border-cyan-500 focus:outline-none transition">
+                    <input type="email" name="email" id="email" placeholder="Work Email" required 
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl focus:border-cyan-500 focus:outline-none transition">
+                </div>
+                    <input type="text" name="company" id="company" placeholder="Company Name" required 
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl focus:border-cyan-500 focus:outline-none transition">
+                    <select name="role" id="role" required 
+        class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl focus:border-cyan-500 focus:outline-none transition text-white">
+        <option value="" disabled selected>Your Role</option>
+        <option value="cto">CTO / VP Engineering</option>
+        <option value="ciso">CISO / Security Lead</option>
+        <option value="ml">ML Engineer / Data Scientist</option>
+        <option value="compliance">Compliance Officer</option>
+        <option value="founder">Founder / CEO</option>
+        <option value="other">Other</option>
+    </select>
+    <textarea name="challenge" id="challenge" placeholder="What's your biggest concern about quantum threats to AI compliance? (Optional)" rows="3"
+        class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl focus:border-cyan-500 focus:outline-none transition resize-none"></textarea>
+    
+    <button type="submit" 
+        class="w-full bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition transform hover:scale-105">
+        Secure My Spot on Waitlist →
+    </button>
+</form>
+
+
+
+
                     
                     <div id="successMessage" class="hidden mt-6 p-4 bg-green-500/20 border border-green-500/50 rounded-xl">
                         <p class="text-green-400 font-semibold">✓ You're on the list! We'll be in touch soon.</p>
